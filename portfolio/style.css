@@ -22,7 +22,7 @@ body{
     place-items: center;
     padding: 10px ;
     border-radius: 100px;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 }
 .right{
    padding: 10px 0px 0px 0px;
@@ -39,6 +39,7 @@ body{
         color: black;
     }
 }
+
 a{
     color: white;
     border-radius: 40px;
