@@ -20,19 +20,24 @@ body{
     flex-direction: column;
     justify-content: center;
     place-items: center;
-    padding: 15px ;
+    padding: 10px ;
     border-radius: 100px;
+    transition: ease-in-out 0.3s;
 }
 .right{
-    display: flex;
-    justify-content: center;
-
+   padding: 10px 0px 0px 0px;
 }
 
 .logo{
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-family: Smooch;
+}
+.left:hover{
+    background-color: white;
+    .logo{
+        color: black;
+    }
 }
 a{
     color: white;
@@ -43,7 +48,7 @@ a{
     text-decoration: none;
     font-size: 20px;
     font-weight: 800;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.3s;
 }
 a:hover{
     border: white solid 1px;
