@@ -2,5 +2,21 @@
     padding: 40px;
     margin: 40px;
     border-radius: 10px;
-    border: white solid 2px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, rgba(113, 0, 0, 0.3), rgba(96, 0, 96, 0.3), rgba(0, 0, 96, 0.3));
+}
+.plbox {
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 50%, white 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    height: 35vh;
+    width: 20vw;
+    transition: background-position 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.plbox:hover {
+    background-position: top;
 }
