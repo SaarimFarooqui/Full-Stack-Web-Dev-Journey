@@ -15,14 +15,16 @@ body{
 
 }
 .left{
-    border: white solid 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     place-items: center;
     padding: 10px ;
     border-radius: 100px;
-    transition: ease-in-out 0.2s;
+    background: linear-gradient(to bottom, black 50%, yellow 50%);
+    background-position: top;
+    background-size: 100% 200%;
+    transition: ease-in-out 0.5s;
 }
 .right{
    padding: 10px 0px 0px 0px;
@@ -32,9 +34,10 @@ body{
     color: white;
     font-size: 17px;
     font-family: Smooch;
+    transition: ease-in-out 0.5s;
 }
 .left:hover{
-    background-color: white;
+    background-position: bottom;
     .logo{
         color: black;
     }
