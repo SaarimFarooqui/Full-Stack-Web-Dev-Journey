@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('bgcity.jpg');
+    background-size: cover;
+    background-position: 100% 70%;
+}
+
+#backscreen{
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+#textbox{
+    height: 300px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    margin-top: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button{
+    height: 0.4in;
+    min-width: 0.8in;
+    padding: 4px;
+    border-radius: 30px;
+    border: 0px;
+    color: white;
+}
+#maintext{
+    font-size: 44px;
+    font-weight: 800;
+    color: white;
+
+}
+.btntext{
+    color: #000;
+    font-size: 15px;
+}
