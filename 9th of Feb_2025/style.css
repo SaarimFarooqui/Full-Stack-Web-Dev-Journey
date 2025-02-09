@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, rgb(136, 0, 255), rgb(251, 0, 255),rgb(255, 0, 102) );
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.searchBar{
+    height: 0.6in;
+    width: 50vw;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: relative;
+}
+.searchbtn{
+    height: 0.55in;
+    width: 0.55in;
+    background-color: white;
+    border: 0px;
+    border-radius: 50px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
