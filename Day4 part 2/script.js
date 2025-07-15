@@ -23,8 +23,8 @@ let colors = [
 let number = 0;
 while(number < colors.length){
     let divBox = document.createElement("div");
-    divBox.style.width = "20vw";
-    divBox.style.height = "20vh";
+    divBox.style.width = "19vw";
+    divBox.style.height = "19vh";
     divBox.style.borderRadius = "15px";
     divBox.style.background = colors[number];
     mainContainer.appendChild(divBox);
