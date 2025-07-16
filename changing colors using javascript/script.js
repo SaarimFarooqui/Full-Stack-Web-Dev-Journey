@@ -1,4 +1,5 @@
-let box = document.getElementById("bg");
+let leftbox = document.getElementById("left");
+let rightbox = document.getElementById("right");
 
 const gradients = [
   "linear-gradient(45deg, #ff6a00, #ee0979)",
@@ -13,9 +14,8 @@ const gradients = [
   "linear-gradient(45deg, #0f2027, #203a43, #2c5364)"
 ];
 
-let index = 0;
-
-setInterval(() => {
-    box.style.background = gradients[index];
-    index = (index + 1) % gradients.length;
-}, 2000)
+setInterval(()=>{
+ let currentopacity = parseFloat(getComputedStyle(rightbox).opacity);
+ currentopacity -= 0.01;
+ rightbox.style.opacity = currentopacity;
+}, 10)
