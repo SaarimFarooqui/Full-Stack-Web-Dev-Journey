@@ -13,20 +13,20 @@
     align-items: center;
 }
 .box{
-    width: 20vw;
-    height: 15vh;
+    width: 40vw;
+    height: 25vh;
     border: 0px;
     border-radius: 15px;
 }
 #left{
     background: linear-gradient(45deg, #ff0000, #002fff);
     position: relative;
-    left: 10vw;
+    left: 20vw;
     opacity: 1;
 }
 #right{
     background: linear-gradient(45deg, #bf00ff, #fd0098);
     position: relative;
-    right: 10vw;
+    right: 20vw;
     opacity: 1;
 }
