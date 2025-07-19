@@ -4,29 +4,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.background{
-    height: 100vh;
-    width: 100vw;
+
+.heading{
+    height: 20vh;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box{
-    width: 40vw;
-    height: 25vh;
-    border: 0px;
-    border-radius: 15px;
-}
-#left{
-    background: linear-gradient(45deg, #ff0000, #002fff);
-    position: relative;
-    left: 20vw;
-    opacity: 1;
-}
-#right{
-    background: linear-gradient(45deg, #bf00ff, #fd0098);
-    position: relative;
-    right: 20vw;
-    opacity: 1;
 }
