@@ -8,16 +8,19 @@
 #background{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(rgb(0, 0, 72),rgb(0, 0, 0),rgb(0, 0, 72));   
+    background: linear-gradient(rgb(0, 0, 40),rgb(0, 0, 0),rgb(0, 0, 40));   
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #image{
-    height: 2in;
-    width: 2in;
+    height: 3in;
+    width: 3in;
+    animation: spin 2s linear infinite;
+    opacity: 40%;
 }
 
-@keyframes spin{
-    
+@keyframes spin {
+    from { transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }
