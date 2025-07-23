@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.images{
+    min-width: 50vw;
+    margin: auto;
+    columns: 4 300px;
+}
+
+img{
+    width: 100%;
+}
