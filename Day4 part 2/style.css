@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Coda:wght@400;800&family=Jersey+15&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Code+Latin:wght@100..700&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.mainContainer{
-    display: grid;
+#header{
     width: 100vw;
-    height: 100vh;
-    background-color: burlywood;
+    padding: 20px 100px;
+    background: linear-gradient(45deg, blue, rgb(234, 0, 255)) ;
+    display: flex;
+    justify-content: space-evenly;
 }
+.btns{
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Archivo Black";
+    padding: 15px 30px;
+    border: 0px;
+    border-radius: 20px;
+}
+#container{
+    border: 3px rgb(255, 0, 255) solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
