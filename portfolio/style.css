@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Coda:wght@400;800&family=Jersey+15&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Code+Latin:wght@100..700&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch&display=swap'); /* font name Bungee */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Coda:wght@400;800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+15&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Code+Latin:wght@100..700&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch&display=swap'); /* IBM Plex Mono */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: mintcream;
+}
+#navbar{
+    width: 100%;
+    background-color: rgb(0, 0, 34);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+#navtag{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 70%;
+}
+#logo{
+    color: white;
+    font-size: 24px;
+    font-family: "Bungee";
+    max-width: 30%;
+}
+a{
+    color: white;
+    font-size: 14px;
+    font-family: "Bungee";
+    margin: 0px 40px;
+    text-decoration: none;
+}
+@media (max-width: 535px){
+    #navtag{
+        display: none;
+    }
+}
