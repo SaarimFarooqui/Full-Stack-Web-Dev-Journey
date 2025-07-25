@@ -1,0 +1,10 @@
+@media (max-width: 600px){
+    #navtag{
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .secondPortion{
+        flex-direction: column;
+    }
+}
