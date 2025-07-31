@@ -1,0 +1,19 @@
+@media (max-width: 900px){
+    #tagsList{
+    display: none;
+}
+    .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    #heading{
+    color: rgb(27, 27, 27);
+    font-family: "Abril Fatface", 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+    .hamburger{
+        display: inline;
+    }
+
+}
