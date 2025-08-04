@@ -19,6 +19,9 @@ adder.addEventListener("click", function(){
         let randomGradient = list[Math.floor(Math.random()*list.length)];
         newDiv.style.background = randomGradient;
         container.appendChild(newDiv);
+        requestAnimationFrame(()=> {
+            newDiv.classList.add("visible");
+        });
 });
 remover.addEventListener("click", function(){
         if(container.lastElementChild){
