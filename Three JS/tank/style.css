@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+#ring{
+    height: 3in;
+    width: 3in;
+    border: 0px;
+    border-radius: 1.5in;
+    background: linear-gradient(45deg, rgb(189, 189, 189),rgb(75, 75, 75));
+    box-shadow: inset 5px 5px 30px white;
+}
