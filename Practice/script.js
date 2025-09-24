@@ -1,8 +1,10 @@
-let square = document.getElementById("card");
-
-let num = 0;
+let box = document.getElementById("box");
+let sign = 1;
+let iterator = 1;
 
 setInterval(()=>{
-    num = (num + 1) % 360;
-    square.style.background = `linear-gradient(${num}deg, rgb(183, 0, 255), rgb(255, 0, 136))`;
-}, 1)
+   if(iterator <= 1){ sign = 1;}else if(iterator >= 1.2){ sign = -1;};
+   iterator += 0.001 * sign;
+   box.style.scale = iterator;
+},5)
+
