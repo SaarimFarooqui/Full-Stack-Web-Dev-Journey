@@ -80,3 +80,9 @@ function deteleObj(array, id){
     const newarray = array.slice().filter((element) => element.id != id);
     return newarray;
 }
+function changePrice(array, id, newprice){
+    const newarray = array.slice().map((element) => element.id == id ? {...element, price : newprice} : element)
+    return newarray
+}
+newed = changePrice(techProducts, 2, 260)
+console.log(newed)
