@@ -70,12 +70,10 @@ const techProducts = [
     price: 499
   }
 ];
-// id product company category price
 
-console.log(techProducts.find(i => i.id === 10));
-
-console.log(techProducts.findIndex(i => i.id === 4));
-
-console.log(techProducts.some(i => i.company === "Apple"));
-
-techProducts.filter(i => i.price >= 500).forEach((element) => {console.log(element)});
+const findOutput = techProducts.find(i => i.id === 10);
+const findIndexOutput = techProducts.findIndex(i => i.id === 4);
+const someOutput = techProducts.some(i => i.company === "Apple");
+const filterOutput = techProducts.filter(i => i.price >= 500);
+const totalPrice = techProducts.reduce((sum, obj) => sum + obj.price ,0);
+console.log(totalPrice);
