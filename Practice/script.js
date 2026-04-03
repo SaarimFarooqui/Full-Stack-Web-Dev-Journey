@@ -71,14 +71,12 @@ const techProducts = [
   }
 ];
 
-const findOutput = techProducts.find(i => i.id === 10);
-const findIndexOutput = techProducts.findIndex(i => i.id === 4);
-const someOutput = techProducts.some(i => i.company === "Apple");
-const filterOutput = techProducts.filter(i => i.price >= 500);
-const totalPrice = techProducts.reduce((sum, obj) => sum + obj.price ,0);
-console.log(totalPrice);
-
-values = [14,73,24,66,54,3,21,33,52,47,42,10,91]
-
-const sorted = values.slice().sort((a,b)=> a-b);
-console.log(sorted);
+function addObject(array, object){
+    const newarray = [...array, object];
+    newarray.sort((a,b) => a.price - b.price);
+    return newarray;
+}
+function deteleObj(array, id){
+    const newarray = array.slice().filter((element) => element.id != id);
+    return newarray;
+}
