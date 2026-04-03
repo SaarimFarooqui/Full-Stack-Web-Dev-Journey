@@ -1,10 +1,81 @@
-let box = document.getElementById("box");
-let sign = 1;
-let iterator = 1;
+const techProducts = [
+  {
+    id: 1,
+    company: "Apple",
+    product: "iPhone 15",
+    category: "Smartphone",
+    price: 999
+  },
+  {
+    id: 2,
+    company: "Samsung",
+    product: "Galaxy S24",
+    category: "Smartphone",
+    price: 899
+  },
+  {
+    id: 3,
+    company: "Microsoft",
+    product: "Surface Laptop 5",
+    category: "Laptop",
+    price: 1200
+  },
+  {
+    id: 4,
+    company: "Dell",
+    product: "XPS 13",
+    category: "Laptop",
+    price: 1100
+  },
+  {
+    id: 5,
+    company: "Sony",
+    product: "PlayStation 5",
+    category: "Gaming Console",
+    price: 499
+  },
+  {
+    id: 6,
+    company: "Google",
+    product: "Pixel 8",
+    category: "Smartphone",
+    price: 799
+  },
+  {
+    id: 7,
+    company: "HP",
+    product: "Spectre x360",
+    category: "Laptop",
+    price: 1300
+  },
+  {
+    id: 8,
+    company: "Lenovo",
+    product: "ThinkPad X1 Carbon",
+    category: "Laptop",
+    price: 1400
+  },
+  {
+    id: 9,
+    company: "Amazon",
+    product: "Echo Dot",
+    category: "Smart Speaker",
+    price: 49
+  },
+  {
+    id: 10,
+    company: "Meta",
+    product: "Quest 3",
+    category: "VR Headset",
+    price: 499
+  }
+];
+// id product company category price
 
-setInterval(()=>{
-   if(iterator <= 1){ sign = 1;}else if(iterator >= 1.2){ sign = -1;};
-   iterator += 0.001 * sign;
-   box.style.scale = iterator;
-},5)
+console.log(techProducts.find(i => i.id === 10));
 
+console.log(techProducts.findIndex(i => i.id === 4));
+
+console.log(techProducts.some(i => i.company === "Apple"));
+
+techProducts.filter(i => i.price >= 500).forEach((element) => {console.log(element)});
