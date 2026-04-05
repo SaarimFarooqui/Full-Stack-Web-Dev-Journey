@@ -3,20 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-#app{
+#main{
     min-height: 100vh;
     width: 100vw;
-    background-color: rgb(28, 33, 50);
+    background-color: rgb(23, 26, 35);
     display: flex;
-    padding: 10px;
+    flex-direction: column;
 }
-.card{
-    height: 1in;
-    width: 2in;
-    background-color: rgb(0, 255, 145);
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
+#whitestrip{
+    height: 3em;
+    width: 100%;
+    background-color: white;
 }
-.card:hover{
-    background-color: rgb(17, 255, 0);
+.bar-after-strip{
+    padding: 1em;
+    height: 12em;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(189, 0, 171);
+    display: flex;
+    justify-content: space-around;
+}
+#circle{
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: white;
+}
+#box{
+    border: 3px solid white;
+    height: 100%;
+    aspect-ratio: 5;
+
 }
