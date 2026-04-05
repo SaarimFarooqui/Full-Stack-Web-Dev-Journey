@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+#app{
+    display: flex;
+    padding: 3px;
+}
+.card{
+    height: 1in;
+    width: 2.5in;
+    border-radius: 5px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-portion{
+    height: 0.4in;
+    width: 2in;
+    border-radius: 5px;
+    background-color: green;
+}
+#card-portion-A{ background-color: blueviolet;}
+#card-portion-B{ background-color: aqua;}
