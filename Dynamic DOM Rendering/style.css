@@ -8,19 +8,21 @@
     padding: 3px;
 }
 .card{
-    height: 1in;
-    width: 2.5in;
+    height: 15em;
+    width: 10em;
     border-radius: 5px;
-    background-color: cadetblue;
+    background: linear-gradient(45deg, rgb(0, 208, 255),blue);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .card-portion{
-    height: 0.4in;
-    width: 2in;
-    border-radius: 5px;
-    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-#card-portion-A{ background-color: blueviolet;}
-#card-portion-B{ background-color: aqua;}
+.productName{
+    font-size: 1.4em;
+}
