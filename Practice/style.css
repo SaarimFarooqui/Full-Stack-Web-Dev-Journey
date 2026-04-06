@@ -3,36 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-#main{
-    min-height: 100vh;
+body{
+    height: 100vh;
     width: 100vw;
-    background-color: rgb(23, 26, 35);
-    display: flex;
-    flex-direction: column;
 }
-#whitestrip{
-    height: 3em;
-    width: 100%;
-    background-color: white;
-}
-.bar-after-strip{
-    padding: 1em;
-    height: 12em;
-    width: 100%;
-    margin-top: 10px;
-    background-color: rgb(189, 0, 171);
-    display: flex;
-    justify-content: space-around;
-}
-#circle{
+#app{
     height: 100%;
-    aspect-ratio: 1;
-    border-radius: 100%;
-    background-color: white;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(28, 36, 54), rgb(140, 0, 205));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#box{
-    border: 3px solid white;
-    height: 100%;
-    aspect-ratio: 5;
+.productbox{
+    height: 8em;
+    min-width: 8em;
+    background: linear-gradient(90deg, rgb(0, 255, 179), rgb(59, 59, 106));
+    box-shadow: 5px 3px 5px;
+}
 
-}
+
