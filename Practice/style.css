@@ -19,7 +19,14 @@ body{
     height: 8em;
     min-width: 8em;
     background: linear-gradient(90deg, rgb(0, 255, 179), rgb(59, 59, 106));
-    box-shadow: 5px 3px 5px;
+    position: relative;
+    animation: animateit 2s ease infinite alternate-reverse;
+
+}
+@keyframes animateit{
+    to{
+        transform: translateX(-40vw) rotate(360deg) scale(1.5);
+    }
 }
 
 
