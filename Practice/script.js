@@ -1,7 +1,4 @@
-const data = [
-    {name: "Mango", cost: 280},
-    {name: "Grape", cost: 350},
-    {name: "Pineapple", cost: 700},
-    {name: "Kiwi", cost: 450}
-]
+const box1 = document.getElementById("box1");
+const box2 = document.getElementById("box2");
 
+b
