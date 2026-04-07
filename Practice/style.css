@@ -21,6 +21,7 @@ body{
     height: 100vh;
     width: 100%;
     position: absolute;
+
 }
 #below{
     height: 100vh;
@@ -41,5 +42,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 1;
 }
 
+#logo{
+    height: 80%;
+    aspect-ratio: 100%;
+    background-color: black;
+}
