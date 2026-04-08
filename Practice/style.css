@@ -34,5 +34,17 @@ body{
 #logo{
     height: 80%;
     aspect-ratio: 1;
-    background-color: chartreuse;
+    background-image: url("Assets/cube.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animateit 1s ease-in-out 3s infinite ;
+}
+
+@keyframes animateit{
+    from{
+        transform: translateY(0em);
+    }
+    to{
+        transform: translateY(4em) rotate(360deg);
+    }
 }
