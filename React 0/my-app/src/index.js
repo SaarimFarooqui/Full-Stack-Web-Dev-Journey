@@ -48,26 +48,22 @@ const pizzaData = [
 ];
 
 
-
 const App = () => { 
-  return <div>
-    <FirstScreen/>
-    <SecondScreen/>
-    </div>
-}
-const FirstScreen = () => {
-  return <div className='Background'>
-    <div className='Navbar'>
-      <ul className='UnorderedList'>
-        <li className='List'><a href='www.google.com'>Home</a></li>
-        <li className='List'><a>About</a></li>
-        <li className='List'><a>Contact</a></li>
-      </ul>
-    </div>
+  return <div className='background'>
+    <Pizza name/>
   </div>
 }
-const SecondScreen = () => {
-  return <div id='SecondScreen'></div>
+
+const Pizza = (props) => {
+  return <div className='box'>
+      <div className='frame'><img src='pizzas/focaccia.jpg'></img></div>
+      <div className='frame' id='lowerframe'>
+        <p id='pizzaName' className='pizzaText'>Focaccia</p>
+        <p id='pizzaIngredients' className='pizzaText'>Bread with italian olive oil and rosemary</p>
+        <p id='pizzaIngredients' className='pizzaText'>Price: 6$</p>
+        <p id='pizzaIngredients' className='pizzaText'>Sold Out: False</p>
+        </div>  
+    </div>
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
