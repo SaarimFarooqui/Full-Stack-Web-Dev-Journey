@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
+  max-width: 100vw;
 }
 .Background{
   height: 100vh;
@@ -46,5 +46,11 @@ a{
   
   text-decoration: none;
   color:  black;
+}
 
+/*Second Screen*/
+
+#SecondScreen{
+  background-color: firebrick;
+  height: 100vh;
 }
