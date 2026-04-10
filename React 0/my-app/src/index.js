@@ -50,18 +50,24 @@ const pizzaData = [
 
 const App = () => { 
   return <div className='background'>
-    <Pizza name/>
+    <div id="headingDiv"><p id='headingText'>The Pizza House Co.</p></div>
+    <div id='pizzaSection'><NewApp/></div>
   </div>
+}
+
+const NewApp = () => {
+  return pizzaData.map((element) => (<Pizza name = {element.name} ingredients = {element.ingredients} price = {element.price} sellStatus = {element.soldOut} image={element.photoName}/>
+  ))
 }
 
 const Pizza = (props) => {
   return <div className='box'>
-      <div className='frame'><img src='pizzas/focaccia.jpg'></img></div>
+      <div className='frame'><img src= {props.image} alt='pizzaImage'></img></div>
       <div className='frame' id='lowerframe'>
-        <p id='pizzaName' className='pizzaText'>Focaccia</p>
-        <p id='pizzaIngredients' className='pizzaText'>Bread with italian olive oil and rosemary</p>
-        <p id='pizzaIngredients' className='pizzaText'>Price: 6$</p>
-        <p id='pizzaIngredients' className='pizzaText'>Sold Out: False</p>
+        <p id='pizzaName' className='pizzaText'>{props.name}</p>
+        <p id='pizzaInfo' className='pizzaText'>{props.ingredients}</p>
+        <p id='pizzaInfo' className='pizzaText'>Price: {props.price}</p>
+        <p id='pizzaInfo' className='pizzaText'>Sold Out: {props.sellStatus ? "Available":"Sold Out"}</p>
         </div>  
     </div>
 }
