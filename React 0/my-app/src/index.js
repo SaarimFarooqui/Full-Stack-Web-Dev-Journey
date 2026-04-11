@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css'
+import './animations.css'
 
 const pizzaData = [
   {
@@ -47,30 +48,18 @@ const pizzaData = [
   },
 ];
 
-
 const App = () => { 
+  return <LandingPage/>
+}
+
+
+const LandingPage = () => {
   return <div className='background'>
-    <div id="headingDiv"><p id='headingText'>The Pizza House Co.</p></div>
-    <div id='pizzaSection'><NewApp/></div>
+    <p id='zetatechdigital-p-tag'>Zeta Tech Digital</p>
   </div>
 }
 
-const NewApp = () => {
-  return pizzaData.map((element) => (<Pizza name = {element.name} ingredients = {element.ingredients} price = {element.price} sellStatus = {element.soldOut} image={element.photoName}/>
-  ))
-}
 
-const Pizza = (props) => {
-  return <div className='box'>
-      <div className='frame'><img src= {props.image} alt='pizzaImage'></img></div>
-      <div className='frame' id='lowerframe'>
-        <p id='pizzaName' className='pizzaText'>{props.name}</p>
-        <p id='pizzaInfo' className='pizzaText'>{props.ingredients}</p>
-        <p id='pizzaInfo' className='pizzaText'>Price: {props.price}</p>
-        <p id='pizzaInfo' className='pizzaText'>Sold Out: {props.sellStatus ? "Available":"Sold Out"}</p>
-        </div>  
-    </div>
-}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<React.StrictMode><App/></React.StrictMode>)
