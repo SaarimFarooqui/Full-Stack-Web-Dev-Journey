@@ -49,18 +49,25 @@ const pizzaData = [
 ];
 
 const App = () => { 
-  return <LandingPage/>
-}
-
-
-const LandingPage = () => {
-  return <div className='background'>
-    <p id='zetatechdigital-p-tag'>Zeta Tech Digital</p>
+  return <div id='background'>
+    <Card/>
   </div>
 }
 
+const Card = () => {
+  return <div id="Card">
+    <Avatar/>
+  </div>
+}
+const Avatar = () => {
+  return <img id='img' src = "pizzas/bg.jpg" alt = "image"></img>
+}
+const Intro = () => {
 
+}
+const SkillList = () => {
 
+}
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<React.StrictMode><App/></React.StrictMode>)
 
