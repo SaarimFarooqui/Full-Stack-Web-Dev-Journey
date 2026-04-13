@@ -49,26 +49,15 @@ const pizzaData = [
 ];
 
 const App = () => { 
-  return <div id='background'>
-    <Card/>
-  </div>
+  return <div><Page1/></div>
 }
 
-const Card = () => {
-  return <div id="Card">
-    <Avatar/>
-  </div>
+const Page1 = () => {
+  return <div id='Page1'><Box/></div>
 }
-const Avatar = () => {
-  return <img id='img' src = "pizzas/bg.jpg" alt = "image"></img>
-}
-const Intro = () => {
 
-}
-const SkillList = () => {
-
+const Box = () => {
+  return <div id='Box'></div>
 }
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<React.StrictMode><App/></React.StrictMode>)
-
-
