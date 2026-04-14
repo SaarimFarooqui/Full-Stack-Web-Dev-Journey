@@ -9,17 +9,17 @@ body{
 #background{
     height: 100vh;
     width: 100%;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(17,17,17);
     position: relative;
 }
 #carousel-container{
-    border: 2px solid black;
     width: 100%;
     overflow-x: hidden;
     position: fixed;
     top: 90vh;
 }
 #carousel-track{
+    background-color: black;
     width: fit-content;
     display: flex;
     animation: carousel 10s linear 0s infinite;
@@ -28,15 +28,20 @@ body{
     flex: 0 0 auto;
     height: 10vh; width: max-content;
     padding: 0px 20px;
-    background: linear-gradient(135deg, rgb(0, 0, 32), rgb(34, 0, 0));
-    color: white;
-    font-size: 2em; font-family: 'Courier New'; font-weight: bolder;
+    background:linear-gradient(135deg, rgb(200, 0, 255), rgb(255, 0, 140));
+    color: transparent;
+    background-clip: text;
+    font-size: 1.5em; font-family: 'Times New Roman'; font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 2px;
+    margin: 0px 4px;
 }
-
+img{
+    height: 10vh;
+    width: auto;
+    padding: 2px 20px;
+}
 @keyframes carousel {
     from{
         transform: translateX(0%);
@@ -45,3 +50,4 @@ body{
         transform: translateX(-50%);
     }
 }
+
