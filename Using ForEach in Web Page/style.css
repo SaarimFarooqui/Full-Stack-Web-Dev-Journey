@@ -9,8 +9,12 @@ body{
 #background{
     height: 100vh;
     width: 100%;
-    background-color: rgb(17,17,17);
+    background-color: rgb(2, 0, 15);
     position: relative;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #carousel-container{
     width: 100%;
@@ -51,3 +55,32 @@ img{
     }
 }
 
+p{
+    font-family: "Sekuya";
+    font-size:4em;
+    color: white;
+    animation: soup 1s linear 0s 1 forwards ;
+}
+p::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: greenyellow;
+    animation: bottomLine 1s ease-out 0.2s 1 forwards;
+}
+@keyframes soup {
+    from{
+        opacity: 0;
+        transform: translateY(-0.2em) scale(1.01);
+    }
+    to{ 
+        opacity: 1;
+        transform: translateY(0em) scale(1);
+    }
+}
+@keyframes bottomLine {
+    to{
+        height: 1%;
+    }
+}
