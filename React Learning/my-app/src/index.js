@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css'
 import './animations.css'
@@ -47,13 +47,21 @@ const pizzaData = [
     soldOut: false,
   },
 ];
-const check = true;
-const App = () => { 
-  return <div><Background/></div>
-}
 
-const Background = () =>{
-  return<div className={`Background ${check ? "Background--new" : ""}`}></div>
+
+const App = () => { 
+  const [num, fy] = useState(1);
+  return <div id='WhiteScreen'>
+    <div id='ProgressSection'>
+      <div className={`ProgressSphere ${num >= 1 && "ProgressSphere-active"}`}></div>
+      <div className={`ProgressSphere ${num >= 2 && "ProgressSphere-active"}`}></div>
+      <div className={`ProgressSphere ${num >= 3 && "ProgressSphere-active"}`}></div>
+    </div>
+    <div id='ButtonSection'>
+      <button onClick={ () => { if(num >= 2){ fy(num-1) } } }>Decrement</button>
+      <button onClick={ () => { if(num <= 2){ fy(num+1) } } }>Increment</button>
+    </div>
+  </div>
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
