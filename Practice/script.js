@@ -10,8 +10,8 @@ const students = [
     age : 23
     },
     {
-        name : "Hassan",
-        roll : "22sp-018-cs",
+    name : "Hassan",
+    roll : "22sp-018-cs",
     age : 23
     }
 ]
