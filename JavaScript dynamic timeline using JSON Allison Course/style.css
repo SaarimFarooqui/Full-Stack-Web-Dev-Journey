@@ -9,8 +9,35 @@ body{
     max-width: 100vw;
 }
 #background{
-    height: 100vh; 
+    min-height: 100vh; 
     width: 100%; 
     background-color: rgb(36, 0, 7); 
+}
+#track-bar{
+    width: 100%;
+    background-color: blueviolet;
     display: flex;
+    overflow-x: hidden;
+}
+.slide{
+    display: flex;
+    animation: move 4s linear 0s infinite;
+}
+.box{
+    height: 10vh;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    margin: 10px 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@keyframes move {
+    to{
+        transform: translateX(-100%);
+    }
 }
