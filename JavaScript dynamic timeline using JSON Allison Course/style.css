@@ -15,13 +15,20 @@ body{
 }
 #track-bar{
     width: 100%;
-    background-color: blueviolet;
     display: flex;
     overflow-x: hidden;
+    position: relative;
+}
+#track-bar::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: linear-gradient(90deg, rgb(36, 0, 7), transparent 60%), linear-gradient(270deg, rgb(36, 0, 7), transparent 60%);
 }
 .slide{
     display: flex;
-    animation: move 4s linear 0s infinite;
+    animation: move 6s linear 0s infinite;
 }
 .box{
     height: 10vh;
