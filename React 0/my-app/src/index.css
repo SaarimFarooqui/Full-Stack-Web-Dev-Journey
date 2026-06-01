@@ -18,42 +18,54 @@
 body {
   max-width: 100vw;
 }
-#Background{
-  min-height: 100vh;
-  width: 100%;
-  padding: 20px;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0), rgb(0, 0, 6) 75%),
-  url("../public/Assets/concreteBackground.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
-}
-#Card{
-  height: 35vh; aspect-ratio: 2;
-  border-radius: 20px;
-  padding: 1em;
-  margin: 1em;
-  background-color: rgb(235, 231, 255);
-  box-shadow: inset -2px -2px 16px rgb(0, 51, 37);
-}
-#CarName{
-  color: rgb(0, 0, 0); font-family: "Sekuya"; font-size: 2em;
-  text-shadow: 3px 3px 10px rgb(47, 47, 47);
-}
-#CompanyName{
-  color: rgb(95, 0, 0); font-family: "Sekuya"; font-size: 1.8em;
-}
-.carcomname{
+#background{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(1, 0, 13);
   display: flex;
-  justify-content: space-between;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
 }
-#carDetails{
+#board{
+  min-height: 2in;
+  width: 4in;
+  border-radius: 1em;
+  background-color: rgb(4, 0, 48);
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em;
+  padding: 1em;
 }
-.details{
+#board #numbering{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#board #numbering li{
   color: black;
-  font-size: 0.8em;
-  font-family: 'Sekuya';
+  background-color: white;
+  font-size: 1em;
+  font-weight: bolder;
+  border: none;
+  padding: 1em;
+  list-style: none;
+}
+#board #numbering li.active{
+  background-color: palevioletred;
+}
+#board #text{
+  color: white;
+  text-align: center;
+  font-family: 'Fira Code', "Kode Mono", 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+#buttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#buttons button{
+  color: white;
+  background-color: chocolate;
+  padding: 0.5em 1em;
 }
