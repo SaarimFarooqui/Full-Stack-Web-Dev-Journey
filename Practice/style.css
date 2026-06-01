@@ -10,35 +10,38 @@ body{
 #background{
     height: 100vh;
     width: 100%;
-    background-color: rgb(0, 0, 26);
+    background: linear-gradient(45deg, rgb(157, 0, 255), rgb(255, 0, 102));
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#box{
-    height: 2in;
-    min-width: 2in;
-    background-color: rgb(255, 255, 255);
+.btn{
+    height: 1in;
+    aspect-ratio: 2.5;
+    color: white;
+    font-family: 'Fire Code';
+    font-size: 2em;
+    border: 0px;
+    background-color: rgb(18, 18, 18);
     position: relative;
-    font-size: 3em; font-family: "Mogra"; 
-    display: flex; align-items: center; justify-content: center;
-    overflow-x: hidden;
-    z-index: 1;
+    overflow: hidden;
 }
-
-#box::after{
-    position: absolute;
-    content: "";
+.btn::after{
+    content: "Yeah !";
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-family: 'Fire Code';
+    font-size: 1.5em;
     height: 100%;
     width: 100%;
-    transform-origin: bottom right;
-    background-color: chartreuse;
-    transform: rotateZ(90deg);
-    animation: bg 0.5s ease-in-out 0s infinite alternate-reverse;
-    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 255, 13);
+    transform: translateY(-100%);
+    transition: 0.3s linear;
 }
-@keyframes bg {
-    to{
-        transform: rotateZ(0deg);
-    }
+.btn:hover::after{
+    transform: translateY(0%);
 }
