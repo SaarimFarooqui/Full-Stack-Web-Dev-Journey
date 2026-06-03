@@ -21,51 +21,43 @@ body {
 #background{
   height: 100vh;
   width: 100vw;
-  background-color: rgb(1, 0, 13);
+  background-color: rgb(232, 207, 255);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#board{
-  min-height: 2in;
-  width: 4in;
-  border-radius: 1em;
-  background-color: rgb(4, 0, 48);
+#box{
+  height: 2in;
+  aspect-ratio: 1;
+  border: 0px;
+  border-radius: 7px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1em;
-  padding: 1em;
+  grid-template-rows: 3fr 1fr;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgb(47, 47, 47);
 }
-#board #numbering{
+#upper{
+  color: cadetblue;
+  font-family: "Fira Code";
+  font-weight: bold;
+  font-size: 5em;
+  text-shadow: 4px 4px 2px rgb(47, 47, 47);
+  background-color: rgb(201, 181, 220);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+
 }
-#board #numbering li{
-  color: black;
-  background-color: white;
-  font-size: 1em;
-  font-weight: bolder;
-  border: none;
-  padding: 1em;
-  list-style: none;
+#lower{
+  background-color: rgb(158, 142, 172);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-#board #numbering li.active{
-  background-color: palevioletred;
-}
-#board #text{
-  color: white;
-  text-align: center;
-  font-family: 'Fira Code', "Kode Mono", 'Times New Roman', Times, serif;
-  font-size: 1em;
-}
-#buttons{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#buttons button{
-  color: white;
-  background-color: chocolate;
-  padding: 0.5em 1em;
+button{
+  color: rgb(107, 107, 107);
+  font-family: "Fira Code";
+  background-color: rgb(232, 220, 237);
+  border: 0px;
+  border-radius: 7px;
+  margin: 5px 10px;
 }
