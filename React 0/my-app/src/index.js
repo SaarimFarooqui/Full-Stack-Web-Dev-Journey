@@ -6,17 +6,19 @@ import './animations.css'
 
 const App = () => { 
 
+  const date = new Date();
+  const formatted = date.toLocaleTimeString('en-US', {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  })
+  
   const [count, setCount] = useState(0);
 
   return <>
   <div id="background">
-    <div id='box'>
-      <div id='upper'>{count}</div>
-      <div id='lower'>
-        <button onClick={() => setCount(count + 1)}>Increment</button>
-        <button onClick={() => setCount(count - 1)}>Decrement</button>
-      </div>
-    </div>
+    <div id='box'></div>
   </div>
   </>
 }

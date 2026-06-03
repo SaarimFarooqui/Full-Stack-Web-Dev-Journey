@@ -34,30 +34,6 @@ body {
   display: grid;
   grid-template-rows: 3fr 1fr;
   overflow: hidden;
+  background-color: rgb(123, 156, 157);
   box-shadow: 5px 5px 5px rgb(47, 47, 47);
-}
-#upper{
-  color: cadetblue;
-  font-family: "Fira Code";
-  font-weight: bold;
-  font-size: 5em;
-  text-shadow: 4px 4px 2px rgb(47, 47, 47);
-  background-color: rgb(201, 181, 220);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-#lower{
-  background-color: rgb(158, 142, 172);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-button{
-  color: rgb(107, 107, 107);
-  font-family: "Fira Code";
-  background-color: rgb(232, 220, 237);
-  border: 0px;
-  border-radius: 7px;
-  margin: 5px 10px;
 }
