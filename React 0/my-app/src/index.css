@@ -3,12 +3,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Bungee&family=Coda:wght@400;800&family=Fira+Code:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+15&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=M+PLUS+Code+Latin:wght@100..700&family=Montez&family=Mrs+Saint+Delafield&family=Permanent+Marker&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch&display=swap');
 /* Fira Code */
-
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Bungee&family=Coda:wght@400;800&family=Fira+Code:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+15&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=M+PLUS+Code+Latin:wght@100..700&family=Montez&family=Mrs+Saint+Delafield&family=Permanent+Marker&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch&display=swap');
 /* Kode Mono */
-
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Bungee&family=Coda:wght@400;800&family=Fira+Code:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+15&family=Kode+Mono:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=M+PLUS+Code+Latin:wght@100..700&family=Montez&family=Mrs+Saint+Delafield&family=Permanent+Marker&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sekuya&family=Smooch&display=swap');
 /* Sekuya */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+/* Fascinate Inline */
 
 * {
   margin: 0;
@@ -20,16 +20,42 @@ body {
 }
 #background{
   height: 100vh;
-  width: 100vw;
-  background-color: rgb(175, 88, 255);
+  width: 100%;
+  background-color: rgb(202, 199, 255);
 }
 #top-bar{
-  height: 15vh;
+  height: 10vh;
   width: 100%;
-  background: linear-gradient(to right, rgb(132, 0, 255) 0%, rgb(255, 0, 251) 50%, rgb(132, 0, 255) 100%);
+  background-color: rgb(185, 181, 255);
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
-#add-your-items{
-  background-color: aqua;
+#top-bar #left{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+a{
+  transition: 0.2s ease-in-out;
+}
+a:hover{
+  background-color: cornflowerblue;
+}
+#backgroundII{
+  height: 100vh;
+  width: 100%;
+}
+select{
+  margin: 3em;
+  border: 0px;
+  background-color:rgb(48, 113, 234);
+  color: aliceblue;
+  padding: 1em 2em;
+  border-radius:20px;
+  outline: none;
+}
+option{
+  background-color: white;
+  color: black;
+  border: 0px;
 }

@@ -8,9 +8,20 @@ const App = () => {
   return <> 
   <div id='background'>
     <div id='top-bar'>
-      <div id='add-your-items'></div>
+      <div id='left'>
+        <empty></empty>
+        <a></a>
+        <a></a>
+        <a></a>
+        <empty></empty>
+      </div>
     </div>
   </div> 
+  <div id='backgroundII'>
+    <select>
+      {Array.from({length: 10}, (_, i) => i+1).map((num) => <option value={num} key={num}>{num}</option>)}
+    </select>
+  </div>
   </>
 }
 
