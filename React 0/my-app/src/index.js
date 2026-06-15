@@ -7,20 +7,18 @@ import './animations.css'
 const App = () => { 
   return <> 
   <div id='background'>
-    <div id='top-bar'>
-      <div id='left'>
-        <empty></empty>
-        <a></a>
-        <a></a>
-        <a></a>
-        <empty></empty>
-      </div>
+    <div id='navbar'>
+      <p id='heading'>🌴 Far Away ✈️</p>
     </div>
-  </div> 
-  <div id='backgroundII'>
-    <select>
-      {Array.from({length: 10}, (_, i) => i+1).map((num) => <option value={num} key={num}>{num}</option>)}
-    </select>
+    <div id='form-bar'>
+      <form>
+        <empty></empty>
+        <select>{Array.from({length:10}, (_ , i)=> i + 1).map((i)=> <option value={i} key={i}>{i}</option>)}</select>
+        <input></input>
+        <button></button>
+        <empty></empty>
+      </form>
+    </div>
   </div>
   </>
 }
