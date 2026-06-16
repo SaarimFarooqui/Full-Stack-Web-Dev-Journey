@@ -5,6 +5,11 @@ import './animations.css'
 
 
 const App = () => { 
+
+  const submitter = () => {
+    
+  }
+
   return <> 
   <div id='background'>
     <div id='navbar'>
@@ -15,7 +20,7 @@ const App = () => {
         <empty></empty>
         <select>{Array.from({length:10}, (_ , i)=> i + 1).map((i)=> <option value={i} key={i}>{i}</option>)}</select>
         <input></input>
-        <button></button>
+        <button>Submit</button>
         <empty></empty>
       </form>
     </div>

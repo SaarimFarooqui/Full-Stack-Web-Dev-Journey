@@ -63,7 +63,7 @@ body {
   align-items: center;
 }
 form{
-  height: 35%;
+  height: 40%;
   width: 100%;
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 3fr 1.5fr 1.5fr;
@@ -71,12 +71,35 @@ form{
 }
 select{
   border: 0px;
-  border-radius: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+select:focus{
+  outline: none;
 }
 option{
   color: white;
   background-color: rgb(28, 28, 28);
-  border-radius: 10px;
 }
-input{}
-button{}
+input{
+  border: none;
+  border-radius: 20px;
+}
+input:focus{
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+}
+button{
+  color: black;
+  font-size: 1.2em;
+  background-color: rgb(255, 200, 200);
+  border-radius: 20px;
+  border: 0px;
+  box-shadow: 3px 3px 5px black;
+  transition: 0.3s linear;
+}
+button:hover{
+  box-shadow: 5px 5px 5px black;
+  transform: translateY(4%);
+}
