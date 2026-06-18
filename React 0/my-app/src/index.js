@@ -23,23 +23,6 @@ const App = () => {
 
   return <> 
   <div id='background'>
-    <div id='navbar'>
-      <p id='heading'>🌴 Far Away ✈️</p>
-    </div>
-    <div id='form-bar'>
-      <form>
-        <empty></empty>
-        <select value={quantity} onChange={(e) => setQuantity(e.target.value)}>
-          {Array.from({length:10}, (_ , i)=> (i - 1) + 1).map((i)=> <option value={i} key={i}>{i}</option>)}
-        </select>
-        <input value={product} onChange={(e) => setProduct(e.target.value)}></input>
-        <button onClick={handleAdd}>Add</button>
-        <empty></empty>
-      </form>
-    </div>
-    <div id='showlist'>
-      {items.map((item) => <p>The number of {item.item_name} we have is {item.number_of_items}</p>)}
-    </div>
   </div>
   </>
 }
