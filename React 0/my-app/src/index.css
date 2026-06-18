@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(7, 7, 7);
 }
 #header p{
   font-family: "Sekuya";
@@ -42,7 +42,7 @@ body {
 #mainbody{
   width: 100%;
   padding: 20px 50px;
-  background-color: coral;
+  background-color: rgb(1, 0, 11);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 150px 150px 150px;
@@ -50,9 +50,23 @@ body {
 }
 .flashcards{
   color: white;
-  background: linear-gradient(to right, rgb(0, 0, 40) 0%, rgb(162, 0, 255) 50%, rgb(0,0,40) 100%);
+  font-size: 1.3em;
+  background: linear-gradient(45deg, rgb(0, 0, 0)0%, rgb(0, 0, 68) 50%);
   border-radius: 15px;
   border: 0px;
+  padding: 10px;
   text-align: center;
   align-content: center;
+  user-select: none;
+}
+.flashcards-answer{
+  background: linear-gradient(45deg, rgb(0, 0, 0)0%, rgb(17, 87, 0) 50%);
+}
+#information{
+  width: 100%;
+  color: cornsilk;
+  background-color: crimson;
+  padding: 10px 40px;
+  font-weight: bolder;
+  font-size: 1.3em;
 }
