@@ -8,14 +8,8 @@ const App = () => {
   return <div><Pageone/></div>
 }
 const Pageone = () => {
-  return <div className='background'>
-    <Card/>
-  </div>
+  return <div className='background'></div>
 }
-const Card = () => {
-  return <div id='card'>
-    <div></div>
-  </div>
-}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<React.StrictMode><App/></React.StrictMode>)

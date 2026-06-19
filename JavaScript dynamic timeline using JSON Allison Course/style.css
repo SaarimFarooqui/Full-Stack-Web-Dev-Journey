@@ -11,40 +11,5 @@ body{
 #background{
     min-height: 100vh; 
     width: 100%; 
-    background-color: rgb(36, 0, 7); 
-}
-#track-bar{
-    width: 100%;
-    display: flex;
-    overflow-x: hidden;
-    position: relative;
-}
-#track-bar::after{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    content: '';
-    background: linear-gradient(90deg, rgb(36, 0, 7), transparent 60%), linear-gradient(270deg, rgb(36, 0, 7), transparent 60%);
-}
-.slide{
-    display: flex;
-    animation: move 6s linear 0s infinite;
-}
-.box{
-    height: 10vh;
-    aspect-ratio: 1;
-    border-radius: 5px;
-    margin: 10px 80px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-@keyframes move {
-    to{
-        transform: translateX(-100%);
-    }
+    background-color: rgb(5, 0, 36); 
 }

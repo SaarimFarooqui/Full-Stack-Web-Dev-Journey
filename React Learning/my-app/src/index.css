@@ -25,16 +25,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-#card {
-  height: 20vh;
-  width: 40vw;
-  background-color: aliceblue;
-  position: relative;
-} 
-#card::after{
-  height: 100%;
-  width: 50%;
-  position: absolute;
-  content: '';
-  background-color: rosybrown;
-}
