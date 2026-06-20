@@ -17,7 +17,6 @@ body{
     background: radial-gradient(circle, rgb(0, 0, 42), rgb(0, 0, 0));
 }
 h1{
-    color: white;
     font-size: clamp(20px, 5vw, 4em);
     font-weight: bolder;
     letter-spacing: 5px;
@@ -29,4 +28,12 @@ h1{
     to {
         transform: translateY(-20px);
     }
+}
+h1 span{
+    color: gray;
+}
+h1 span:hover{
+    color: gold;
+    text-shadow: 0px 0px 5px goldenrod, 0px 0px 5px gold, 0px 0px 15px rgb(255, 149, 0);
+    
 }
